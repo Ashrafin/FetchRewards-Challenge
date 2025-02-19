@@ -76,7 +76,7 @@ export function SearchProvider({ children }: PropsWithChildren) {
   }, []);
 
   useEffect(() => {
-    handleFetchDogs();
+    handleGetDogs();
   }, [
     ...Object.values(searchFilters),
     ...Object.values(searchParams),
@@ -98,7 +98,7 @@ export function SearchProvider({ children }: PropsWithChildren) {
     });
   }
 
-  async function handleFetchDogs() {
+  async function handleGetDogs() {
     try {
       setIsLoading(true);
       const searchResponse = await API.get<SearchResult>("/dogs/search", {
