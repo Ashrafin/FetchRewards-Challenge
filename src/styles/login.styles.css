@@ -1,0 +1,15 @@
+.login__container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #4CB5AE;
+}
+
+.login__card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: fit-content;
+  margin: auto;
+}
